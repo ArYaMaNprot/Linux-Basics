@@ -8,3 +8,9 @@
     k or the up arrow - will move you up one line
     j or the down arrow - will move you down one line
     l or the right arrow - will move you right one character
+
+    i - insert text before the cursor
+    O - insert text on the previous line
+    o - insert text on the next line
+    a - append text after the cursor
+    A - append text at the end of the line
