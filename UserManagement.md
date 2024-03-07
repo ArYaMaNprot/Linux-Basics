@@ -22,3 +22,16 @@
     - Reserved field for future use
       In most distributions today, user authentication doesn't rely on just the /etc/shadow file, t
       here are other mechanisms in place such as PAM (Pluggable Authentication Modules) that replace authentication.
+
+
+      Another file that is used in user management is the /etc/group file. This file allows for different groups with different permissions.
+
+## $ cat /etc/group
+    root:*:0:pete
+
+    Very similar to the /etc/password field, the /etc/group fields are as follows:
+
+    Group name
+    Group password - there isn't a need to set a group password, using an elevated privilege like sudo is standard. A "*" will be put in place as the default value.
+    Group ID (GID)
+    List of users - you can manually specify users you want in a specific group
