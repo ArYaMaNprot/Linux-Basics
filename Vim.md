@@ -20,3 +20,15 @@
     y - yank or copy whatever is selected
     yy - yank or copy the current line
     p - paste the copied text before the cursor
+
+## Editing Options for editor
+    :w - writes or saves the file
+    :q - quit out of vim
+    :wq - write and then quit
+    :q! - quit out of vim without saving the file
+    ZZ - equivalent of :wq, but one character faster
+
+    u - undo your last action
+    Ctrl-r - redo your last action
+
+You may not think ZZ is necessary, but you'll eventually see that your fingers may tend to lean towards this rather than :wq.
