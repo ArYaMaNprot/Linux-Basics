@@ -14,3 +14,9 @@
     o - insert text on the next line
     a - append text after the cursor
     A - append text at the end of the line
+
+    x - used to cut the selected text also used for deleting characters
+    dd - used to delete the current line
+    y - yank or copy whatever is selected
+    yy - yank or copy the current line
+    p - paste the copied text before the cursor
