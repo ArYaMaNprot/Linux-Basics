@@ -38,3 +38,18 @@
 
     to change user and group of file command:
     sudo chown patty:whales myfile
+
+    Just like regular permissions there are two ways to modify SUID permissions.
+
+Symbolic way:
+
+    $ sudo chmod u+s myfile
+    Numerical way:
+
+    sudo chmod 4755 myfile
+     SUID is denoted by a 4
+     SUID denoted as a capital S this means that it still does the same thing, but it does not have execute permissions.
+
+     sudo chmod g+s myfile
+     The numerical representation for SGID is 2.
+    $ sudo chmod 2555 myfile
