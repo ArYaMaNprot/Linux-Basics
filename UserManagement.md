@@ -35,3 +35,6 @@
     Group password - there isn't a need to set a group password, using an elevated privilege like sudo is standard. A "*" will be put in place as the default value.
     Group ID (GID)
     List of users - you can manually specify users you want in a specific group
+
+    to change user and group of file command:
+    sudo chown patty:whales myfile
