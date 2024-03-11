@@ -29,3 +29,8 @@
     START: Start time of the process
     TIME: Total CPU usage time
     COMMAND: Name of executable/command
+
+
+## process creation
+
+    When a new process is created, an existing process basically clones itself using something called the fork system call (system calls will be discussed very far into the future). The fork system call creates a mostly identical child process, this child process takes on a new process ID (PID) and the original process becomes its parent process and has something called a parent process ID PPID. Afterwards, the child process can either continue to use the same program its parent was using before or more often use the execve system call to launch up a new program. This system call destroys the memory management that the kernel put into place for that process and sets up new ones for the new program.
