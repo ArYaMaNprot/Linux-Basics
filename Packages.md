@@ -51,3 +51,20 @@
 
     Throughout your journey of Linux, you'll encounter other archive and compression types such as: bzip2, compress, zip, unzip, etc. 
     They are a little less common, but just keep in mind that different utilities will call for different commands.
+## Install a package
+    Debian: $ dpkg -i some_deb_package.deb
+    RPM: $ rpm -i some_rpm_package.rpm
+    The i stands for install. You can also use the longer format of --install.
+
+## Remove a package
+    Debian: $ dpkg -r some_deb_package.deb
+    RPM: $ rpm -e some_rpm_package.rpm
+    Debian: r for remove
+    RPM: e for erase
+
+## List installed packages
+    Debian: $ dpkg -l
+    RPM: $ rpm -qa
+    
+## Debian: l for list
+    RPM: q for query and a for all
