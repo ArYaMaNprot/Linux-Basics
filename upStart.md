@@ -19,3 +19,16 @@ To find out if you are using Upstart, if you have a /usr/share/upstart directory
     Once a startup event occurs, it will run jobs triggered by that event.
     These jobs will make new events and then those events will trigger more jobs
     Upstart continues to do this until it completes all the necessary jobs
+## Upstart jobs 
+        There are a lot of useful commands you can use in an Upstart system.
+
+    ## View jobs
+        initctl list
+        shutdown stop/waiting
+        console stop/waiting                            
+        
+    You'll see a list of Upstart jobs with different statuses applied to them. 
+    In each line, the job name is the first value and the second field (before the /) is actually the goal of the job, 
+    the third value (after the /) is the current status. 
+    So we see that our shutdown job eventually wants to stop, but it is currently in a state of waiting. 
+    The job status and goals will change as you start or stop jobs.
