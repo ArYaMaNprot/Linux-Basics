@@ -6,3 +6,8 @@ To find out what files are maintained by our system logger, look at the configur
 
 
 pete@icebox:~$ less /etc/rsyslog.d/50-default.conf 
+
+Let's actually see logging in action, you can manually send a log with the logger command:
+  
+  logger -s Hello
+
