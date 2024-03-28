@@ -11,3 +11,18 @@ Let's actually see logging in action, you can manually send a log with the logge
   
   logger -s Hello
 
+### /var/log/messages
+
+    This log contains all non-critical and non-debug messages,
+    
+    includes messages logged during bootup (dmesg), auth, cron, 
+    
+    daemon, etc. Very useful to get a glimpse of how your machine is acting.
+
+#### /var/log/syslog
+
+    This logs everything except auth messages, it's extremely useful for debugging errors on your machine.
+    
+    These two logs should be more than enough when troubleshooting issues with your system, 
+    
+    However, if you just want to view a specific log component, there are also separate logs for those as well.
